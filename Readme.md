@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Denis Mertens](https://up.htmlacademy.ru/htmlcss/36/user/13264).
-* Наставник: `Ирина Антипина`.
+* Наставник: [Ирина Антипина] (https://htmlacademy.ru/profile/id2108789).
 
 ---
 
