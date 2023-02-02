@@ -40,7 +40,7 @@ body {
 }
 .navigation-link {
   text-decoration: none;
-  color: #000000;
+  color: inherit;
 }
 
 .navigation-link-button {
