@@ -44,10 +44,11 @@ body {
 
 .navigation {
   display: flex;
-  margin: 0 auto;
-  width: 1200px;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 20px;
+  background-color: #ffffff;
 }
 
 .navigation-list {
@@ -60,7 +61,7 @@ body {
 
 .navigation-user {
   max-width: 250px;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .navigation-item {
@@ -71,7 +72,6 @@ body {
 }
 .navigation-link {
   padding: 20px 16px;
-  min-height: 30px;
   min-width: 20px;
   display: block;
   text-decoration: none;
@@ -80,7 +80,7 @@ body {
 
 .navigation-link-button {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 5px;
   font-weight: 700;
   background-color: #756157;
   border-radius: 4px;
@@ -91,15 +91,17 @@ body {
 
 .container {
   flex-grow: 1;
+  background-color: #ffffff;
 }
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px 15px rgb(136 136 136 / 23%);
 }
 
 .main-logo {
-  margin-left: 70px;
   display: block;
 }
 
@@ -118,11 +120,16 @@ body {
 }
 
 .main-description {
-  margin-bottom: 20px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+}
+
+.second-description {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .description-title {
-  padding-top: 69px;
   padding-bottom: 25px;
   margin: 0;
   font-size: 30px;
@@ -134,11 +141,11 @@ body {
 
 .description-text {
   margin: 0;
-  padding-bottom: 69px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+  padding-bottom: 25px;
 }
 
 .advantages-list {
@@ -151,8 +158,13 @@ body {
 }
 
 .advantages-item {
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.12);;
   width: 400px;
+  min-height: 385px;
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);;
 }
 
 .item-content {
@@ -209,16 +221,23 @@ body {
 }
 
 .infrastructure-item {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+  min-height: 385px;
 }
 
-.infrastructure-item:hover {
+.infrastructure-item:nth-child(2) {
   background-color: #ffffff;
 }
 
 .intresting {
   text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.intresting-description {
+  padding-bottom: 54px;
 }
 
 .intresting-button {
@@ -234,7 +253,7 @@ body {
 }
 
 .subscribe {
-  margin-top: 96px;
+  padding-top: 96px;
   padding-bottom: 104px;
   background-color: #81b3d3;
   background-image: url("../images/subscribe.jpg");
@@ -258,12 +277,16 @@ body {
   line-height: 24px;
   }
 
-.footer {
+ .footer {
+    background-color: #ffffff;
+ }
+
+.footer-contacts {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 45px;
-    margin-bottom: 35px;
+    padding-top: 45px;
+    padding-bottom: 35px;
 }
 
 .footer-social {
@@ -292,6 +315,7 @@ body {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin-bottom: 56px;
 }
 
 .filter-title {
@@ -299,6 +323,7 @@ body {
   font-weight: 700;
   line-height: 78px;
   color: #ffffff;
+  margin: 0;
 }
 
 .filter-breadcrumbs-list {
@@ -317,10 +342,6 @@ body {
   padding: 0;
 }
 
-.sort-control {
-
-}
-
 .select-control {
   font-family: 'PT Sans';
   font-size: 18px;
@@ -328,12 +349,11 @@ body {
   line-height: 21px;
 }
 
-.hotels {
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
 .hotels-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -344,8 +364,9 @@ body {
   border: #f2f2f2 1px solid;
 }
 
-.hotels-card-image {
-  display: block;
+.hotels-card-image img {
+  object-fit: contain;
+  width: 300px;
 }
 
 .hotels-card-link {
@@ -398,7 +419,10 @@ body {
   text-decoration: none;
   color: #ffffff;
   background-color: #82b3d3;
-  padding: 13px 23px;
+  display: block;
+  min-width: 60px;
+  padding: 13px 5px;
+  box-sizing: border-box;
 }
 
 .pagination-link-selected {
@@ -413,6 +437,12 @@ body {
 .pagination-dots {
   background-color: #ffffff;
   color: #000000;
+}
+
+.subscribe-form {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .subscribe-inverse {
@@ -478,7 +508,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 56px;
   margin-left: 70px;
   margin-right: 70px;
+  margin-bottom: 40px;
 }
