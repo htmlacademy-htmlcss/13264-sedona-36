@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
 
-  <body>
-    <header class="page-header">
+  <body class="page-container">
+
+    <header>
       <nav class="navigation">
         <a href="index.html"><img class="main-logo" src="images/logo.svg" width="140" height="70"
             alt="City of Sedona."></a>
@@ -30,7 +31,7 @@
       </nav>
     </header>
     <main class="container main-index">
-      <div class="page-container">
+
         <section class="main-banner">
           <h1 class="visually-hidden">Welcome to the gorgeous. Sedona Because the Grand canyon sucks!</h1>
           <img class="main-banner-image" src="images/welcome-banner.svg" width="458" height="352"
@@ -122,26 +123,28 @@
         </section>
         <section class="intresting">
           <h3 class="description-title">Заинтересовались?</h3>
-          <p class="description-text">
+          <p class="description-text intresting-description ">
             Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a class="intresting-button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
-      </div>
+
     </main>
-    <aside class="page-container subscribe">
-      <h2 class="description-title subscribe-title">Подпишитесь на рассылку</h2>
-      <p class="description-text subscribe-description">
-        Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
-      <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="subscribe">email</label>
-        <input class="subscribe-email" type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe"
-          required>
-        <button class="button button-light  button-large" type="submit">Подписаться</button>
-      </form>
-    </aside>
-    <footer class="page-container footer">
+
+    <footer class="footer">
+    <aside class="subscribe">
+          <h2 class="description-title subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="description-text subscribe-description">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="subscribe">email</label>
+            <input class="subscribe-email" type="email" placeholder="Ваш email" name="subscribe-email" id="subscribe"
+              required>
+            <button class="button button-light  button-large" type="submit">Подписаться</button>
+          </form>
+        </aside>
+      <section class="footer-contacts">
       <ul class="footer-social">
         <li class="footer-social-vk"> <a class="footer-social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">VK</span>
@@ -159,7 +162,9 @@
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="footer-image" href="https://htmlacademy.ru/"><img src="images/htmlacademy.svg" width="115" height="33"
           alt="Логотип htmlacademy."></a>
+        </section>
     </footer>
+
   </body>
 
 </html>
