@@ -350,7 +350,7 @@ body {
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);;
   width: 400px;
-  min-height: 385px;
+  min-height: 384px;
 }
 
 .advantages-item:nth-child(3) {
@@ -397,7 +397,7 @@ body {
 
 .features-description {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 112px;
   padding-left: 85px;
   padding-right: 85px;
@@ -544,6 +544,9 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  width: 485px;
+  margin: 0 auto;
+  padding-bottom: 51px;
 }
 
 .subscribe-email {
@@ -952,6 +955,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   background-image: none;
+  padding-top: 111px;
 }
 
 .button-large {
@@ -1071,11 +1075,6 @@ body {
   background-color: #242424;
   border-radius: 50%;
   content: "";
-}
-
-
-.filter-hotel-chekbox {
-
 }
 
 .filter-hotel-radio {
@@ -1270,15 +1269,36 @@ body {
 }
 
 .modal-close-button {
-  padding: 25px;
-  border-radius: 25px;
-  border: none;
-  position: absolute;
-  right: 53px;
-  top: 65px;
-  background-image: url(../images/close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 64px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border: #f2f2f2 1px solid;
+    width: 53px;
+    height: 53px;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  border: #e6e6e6 1px solid;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+  border: #e6e6e6 1px solid;
+}
+
+.modal-close-button:focus-visible {
+  background-color: #e6e6e6;
+  border: #83b3d3 1px solid;
+}
+
+.modal-close-button:active  .close{
+  fill: #c3c3c3;
+  border: #e6e6e6 1px solid;
 }
 
 .appointment-form {
@@ -1334,13 +1354,35 @@ body {
   background-color: #83b3d3;
 }
 
+.check-button:active {
+  color: rgba(255, 255, 255, 0.3);;
+  background-color: #68a2ca;
+}
+
+.check-button:focus {
+  color: #ffffff;
+    background-color: #68a2ca;
+}
+
+.check-button:hover {
+
+  background-color: #68a2ca;
+}
+
+
+
+.check-button:focus-visible {
+
+  background-color: #68a2ca;
+}
+
 .check-person-form {
   grid-area: check-person-form;
 }
 
 .field-group {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .form-label {
@@ -1351,12 +1393,10 @@ body {
 }
 
 .calendar-field {
+  font-family: 'PT Sans';
   font-weight: 700;
   font-size: 18px;
   padding-left: 21px;
-}
-
-.calendar-field {
   width: 417px;
   border: none;
   background: #F2F2F2;
@@ -1366,12 +1406,21 @@ body {
   background-position: 402px 15px;
 }
 
+.calendar-field:hover {
+  background-color: #e6e6e6;
+}
+
+.calendar-field:focus {
+  background-color: #e6e6e6;
+}
+
 .count-field {
-  width: 59px;
+  width: 26px;
   height: 40px;
   margin: 0;
-  padding: 5px 5px 5px 20px;
+  padding: 5px;
   border: none;
+  font-family: 'PT Sans';
   font-size: 18px;
   font-weight: 700;
   background-color: #f2f2f2;
@@ -1386,10 +1435,11 @@ body {
 
 .buttons {
   position: relative;
+  display: flex;
+  width: 108px;
 }
 
 .form-message-error {
-
   padding-left: 20px;
   padding-right: 20px;
   font-weight: 400;
@@ -1402,6 +1452,7 @@ body {
 .modal-button {
   background-color: #f2f2f2;
   height: 50px;
+  width: 40px;
 }
 
 .modal-button:focus {
@@ -1415,23 +1466,148 @@ body {
 
 .modal-button-min {
   background-color: #f2f2f2;
-  position: absolute;
+  border-radius: 4px 0 0 4px;
+
 }
+
+.minus {
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+
+.plus {
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+
+.modal-button-min:hover .minus {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.modal-button-min:active .minus {
+  fill: #000000;
+  fill-opacity: 0.3;
+}
+
+.modal-button-min:focus-visible {
+  background-color: #f2f2f2;
+  border: 1px #83b3d3 solid;
+}
+
+.modal-button-max:focus-visible {
+  background-color: #f2f2f2;
+  border: 1px #83b3d3 solid;
+}
+
+.modal-button-max:hover .plus {
+  fill: #000000;
+  fill-opacity: 1;
+}
+
+.modal-button-max:active .plus {
+  fill: #000000;
+  fill-opacity: 0.3;
+}
+
 
 .modal-button-max {
   background-color: #f2f2f2;
-  position: absolute;
   border-radius: 0 4px 4px 0;
+}
+
+.minus {
+  position: absolute;
+  left: 15px;
+  bottom: 33px;
+}
+
+.plus {
+  position: absolute;
+  right: 16px;
+  bottom: 27px;
 }
 
 .label-children {
   background-color: #ffffff;
-  padding: 11px 73px 11px 0;
+  padding: 14px 0 11px 37px;
 }
 
 .attention {
   background-color: #83b3d3;
   border-radius: 25px;
-  padding: 0px 10px;
+  padding: 0 13px;
   color: #ffffff;
+  background-image: url(../images/i.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 10px;
+}
+
+
+
+
+.tooltip {
+  margin-left: 16px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #AF7842;
+}
+
+.tooltip-text {
+  position: absolute;
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 22px 22px;
+  border-radius: 11px;
+  left: 80%;
+  transform: translateX(-50%);
+  width: 213px;
+  z-index: 1;
+  display: none;
+  top: 42px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: '';
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  transform: rotate(133deg);
+  bottom: 85%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #242424;
+  width: 25px;
+  height: 25px;
 }
