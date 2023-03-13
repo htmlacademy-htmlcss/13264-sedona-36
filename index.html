@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   </head>
 
   <body class="page-container">
@@ -253,7 +254,7 @@
                 <span class="form-label">
                   <label class="form-label" for="check-in-number-children">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" type="button">
+                    <button class="tooltip-toggle" type="button" id="tooltip">
                       <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
@@ -275,7 +276,7 @@
                     <path  d="M0 0v2h14V0H0Z"></path>
                   </svg>
                 </button>
-                <input class="form-field count-field" type="number" id="check-in-number-children" name="check-in-number-children" value="2" placeholder="Укажите количество">
+                <input class="form-field count-field" type="number" id="check-in-number-children" name="check-in-number-children" value="2" placeholder="Укажите количество" aria-labelledby="tooltip">
                 <button class="button modal-button modal-button-max" type="button">
                   <span class="visually-hidden">Увеличить количество детей.</span>
                   <svg class="plus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none">
@@ -285,7 +286,7 @@
               </div>
             </div>
 
-            <button class="button appointment-submit check-button" type="submit">Найти</button>
+            <button class="button button-light check-button" type="submit">Найти</button>
           </form>
 
         </section>
