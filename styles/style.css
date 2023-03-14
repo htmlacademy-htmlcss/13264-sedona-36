@@ -621,6 +621,7 @@ body {
 
 .footer-social-link {
   padding: 10px 15px 10px 10px;
+  fill: #83b3d3;
 }
 
 .footer-phone {
@@ -1378,7 +1379,7 @@ body {
 .appointment-form {
   display: grid;
   grid-template-columns: 135px 440px;
-  grid-template-rows: 50px 45px 50px 45px 60px 40px 60px 62px;
+  grid-template-rows: 50px 44px 50px 45px 60px 40px 58px 64px;
   grid-template-areas:
     "check-in-date check-in-form"
     "check-error-empty check-error"
@@ -1431,6 +1432,7 @@ body {
 
 .check-button {
   grid-area: check-button;
+  font-size: 20px;
 }
 
 .check-button:focus {
@@ -1439,14 +1441,10 @@ body {
 }
 
 .check-button:hover {
-
   background-color: #68a2ca;
 }
 
-
-
 .check-button:focus-visible {
-
   background-color: #68a2ca;
 }
 
@@ -1463,7 +1461,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  padding-top: 12px;
+  padding-top: 14px;
 }
 
 .calendar-field {
@@ -1625,7 +1623,7 @@ body {
 }
 
 .tooltip {
-  margin-left: 16px;
+  margin-left: 14px;
   position: absolute;
   width: 16px;
   height: 16px;
