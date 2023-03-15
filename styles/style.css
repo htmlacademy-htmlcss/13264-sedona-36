@@ -672,7 +672,7 @@ body {
   list-style-type: none;
   display: flex;
   position: relative;
-  padding: 0 0 32px 15px;
+  padding: 0 0 32px 0;
   margin: 0;
 }
 
@@ -682,7 +682,8 @@ body {
   line-height: 21px;
   color: #ffffff;
   position: relative;
-  padding: 0 0 0 26px;
+  padding: 0 0 0 29px;
+  text-decoration: none;
 }
 
 .breadcrumbs-item:first-child::before {
@@ -694,7 +695,7 @@ body {
   content: "";
   position: absolute;
   top: 6px;
-  left: 8px;
+  left: 11px;
   height: 11px;
   width: 8px;
 }
@@ -718,37 +719,39 @@ body {
 
 .breadcrumbs-link-home {
   position: relative;
-  display: block;
 }
 
-.breadcrumbs-link-home::before {
-  padding: 13px;
-  background-image: url("../images/icons/breadcrumbs.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  content: "";
-  top: -4px;
-  right: 0;
-  left: -21px;
-  bottom: 0;
+.breadcrumbs-link-home svg {
+  fill: #ffffff;
 }
 
-.breadcrumbs-item-link {
+.breadcrumbs-link-home:hover svg {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link-home:focus svg {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link-home:focus-visible svg {
+  opacity: 1;
+}
+
+.breadcrumbs-item a {
   color: #ffffff;
   text-decoration: none;
 }
 
-.breadcrumbs-item-link:focus {
-  color: rgba(255, 255, 255, 0.6);
+.breadcrumbs-item a:focus {
+  opacity: 0.3;
 }
 
-.breadcrumbs-item-link:hover {
-  color: rgba(255, 255, 255, 0.3);
+.breadcrumbs-item a:hover {
+  opacity: 0.6;
 }
 
-.breadcrumbs-item-link:focus-visible {
-  color: #ffffff;
+.breadcrumbs-item a:focus-visible {
+  opacity: 1;
 }
 
 .sort-title {
@@ -783,7 +786,7 @@ body {
 }
 
 .select-control:active {
-  border: 1px solid #3f5e72;
+  border: 2px solid #3f5e72;
 }
 
 .select-control:disabled {
@@ -1486,20 +1489,18 @@ body {
   background-color: #e6e6e6;
 }
 
-
 .calendar-field:placeholder-shown {
   background-color: #f2f2f2;
-  box-shadow: 0 0 0 1px transparent inset;
 }
 
 .calendar-field:not(:placeholder-shown) {
   background-color: #f2f2f2;
-  box-shadow: 0 0 0 1px #000000 inset;
+  outline: 2px #000000 solid;
 }
 
 .calendar-field:focus-visible {
   background-color: #e6e6e6;
-  border: 1px #83b3d3 solid;
+  outline: 2px #83b3d3 solid;
 }
 
 .calendar-field:disabled {
@@ -1553,6 +1554,7 @@ body {
 .modal-button-min {
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
+  border: 1px solid transparent;
 }
 
 .minus {
@@ -1581,7 +1583,23 @@ body {
   fill-opacity: 0.3;
 }
 
+.modal-button-min:focus {
+  background-color: #f2f2f2;
+  border: 1px #83b3d3 solid;
+}
+
 .modal-button-min:focus-visible {
+  background-color: #f2f2f2;
+  border: 1px #83b3d3 solid;
+}
+
+.modal-button-max {
+  background-color: #f2f2f2;
+  border-radius: 0 4px 4px 0;
+  border: 1px solid transparent;
+}
+
+.modal-button-max:focus {
   background-color: #f2f2f2;
   border: 1px #83b3d3 solid;
 }
@@ -1599,11 +1617,6 @@ body {
 .modal-button-max:active .plus {
   fill: #000000;
   fill-opacity: 0.3;
-}
-
-.modal-button-max {
-  background-color: #f2f2f2;
-  border-radius: 0 4px 4px 0;
 }
 
 .label-children {
@@ -1690,12 +1703,16 @@ body {
   outline: 1px solid #e6e6e6;
 }
 
+.filter-input:not(:placeholder-shown) {
+  outline: 1px solid #000000;
+}
+
 .filter-input:hover {
   background-color: #f2f2f2;
 }
 
-.filter-input:not(:placeholder-shown) {
-  outline: 1px solid #000000;
+.filter-input:focus {
+  outline: 1px solid#83b3d3;
 }
 
 .filter-input:focus-visible {
