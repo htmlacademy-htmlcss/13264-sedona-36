@@ -37,21 +37,19 @@
       </nav>
     </header>
     <main class="container main-index">
-
       <section class="filter">
         <h1 class="filter-title">Гостиницы Седоны</h1>
         <nav class="filter-breadcrumbs">
-
           <ol class="filter-breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html"><span
                   class="visually-hidden">Главная.</span>
-                  <svg width="13" height="13" viewBox="0 0 13 13"  xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" />
-                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" />
-                    </svg>
-
-                </a>
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" />
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" />
+                </svg>
+              </a>
             </li>
             <li class="breadcrumbs-item">Гостиницы</li>
           </ol>
@@ -75,56 +73,48 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="wifi" >
+                    <input class="visually-hidden control-input" type="checkbox" name="wifi">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
-
               </ul>
             </fieldset>
 
-
-
             <fieldset class="fieldset filter-hotel-radio">
               <legend class="filter-hotel-title">Тип Жилья:</legend>
-
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type" value="hotel" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type" value="motel">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Мотель</span>
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="type" value="appartment">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="radio" name="type" value="appartment">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="fieldset filter-hotel-input">
               <legend class="filter-hotel-title">Стоимость, ₽:</legend>
-
               <div class="range-input">
                 <input class="filter-input filter-input-start" type="number" name="start-price" id="from" value="0">
                 <label class="filter-input-from" for="from">от</label>
                 <input class="filter-input filter-input-end" type="number" name="end-price" id="before" value="9000">
                 <label class="filter-input-before" for="before">до</label>
               </div>
-
-
-
 
               <div class="range-scale">
                 <div class="range-bar" style="left: 2px;width: 226px;">
@@ -136,8 +126,6 @@
                   </button>
                 </div>
               </div>
-
-
             </fieldset>
             <div class="fieldset filter-hotel-buttons">
               <button class="button button-light button-hotels-filter" type="submit">Применить</button>
@@ -153,7 +141,8 @@
           <option value="hight-price">Сначала дорогие</option>
         </select>
         <div class="sort-control">
-          <button class="sort-button sort-button-three" type="button"><span class="visually-hidden">3 в
+          <button class="sort-button sort-button-three sort-button-current" type="button"><span
+              class="visually-hidden">3 в
               ряд.</span></button>
           <button class="sort-button sort-button-one" type="button"><span class="visually-hidden">1 в
               ряд.</span></button>
@@ -166,16 +155,18 @@
         <ul class="hotels-list">
           <li class="hotels-card">
             <a class="hotels-card-image" href="#"><img src="images/hotels/amararesort.jpeg" width="300" height="212"
-                alt="Amara Resort & Spa."></a>
+                alt="Amara Resort &amp; Spa."></a>
             <a class="hotels-card-link" href="#">
-              <h3 class="hotels-card-name">Amara Resort & Spa</h3>
+              <h3 class="hotels-card-name">Amara Resort &amp; Spa</h3>
             </a>
-            <p class="hotels-card-type">Гостиница</p>
-            <p class="hotels-card-price">От 4000 ₽</p>
-            <a class="button hotels-button-more" href="#">подробнее</a>
-            <button class="button button-light hotels-button-favorite" type="button">в избранное</button>
-            <div class="hotels-raiting-stars four-stars"><span class="visually-hidden">4 звезды</span></div>
-            <p class="hotels-raiting">Рейтинг: 8,5</p>
+            <div class="hotel-information">
+              <p class="hotels-card-type">Гостиница</p>
+              <p class="hotels-card-price">От 4000 ₽</p>
+              <a class="button hotels-button-more" href="#">подробнее</a>
+              <button class="button button-light hotels-button-favorite" type="button">в избранное</button>
+              <div class="hotels-raiting-stars four-stars"><span class="visually-hidden">4 звезды</span></div>
+              <p class="hotels-raiting">Рейтинг: 8,5</p>
+            </div>
           </li>
           <li class="hotels-card">
             <a class="hotels-card-image" href=""><img src="images/hotels/villas-at-poco.jpeg" width="300" height="212"
@@ -183,13 +174,15 @@
             <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-name">Villas at Poco Diablo</h3>
             </a>
-            <p class="hotels-card-type">Гостиница</p>
-            <p class="hotels-card-price">От 5000 ₽</p>
-            <a class="button hotels-button-more" href="#">подробнее</a>
-            <button class="button hotels-button-favorite hotels-button-favorite-true" type="button">в
-              избранном</button>
-            <div class="hotels-raiting-stars four-stars"><span class="visually-hidden">4 звезды</span></div>
-            <p class="hotels-raiting">Рейтинг: 9,2</p>
+            <div class="hotel-information">
+              <p class="hotels-card-type">Гостиница</p>
+              <p class="hotels-card-price">От 5000 ₽</p>
+              <a class="button hotels-button-more" href="#">подробнее</a>
+              <button class="button hotels-button-favorite hotels-button-favorite-true" type="button">в
+                избранном</button>
+              <div class="hotels-raiting-stars four-stars"><span class="visually-hidden">4 звезды</span></div>
+              <p class="hotels-raiting">Рейтинг: 9,2</p>
+            </div>
           </li>
           <li class="hotels-card">
             <a class="hotels-card-image" href=""><img src="images/hotels/desert-quail.jpeg" width="300" height="212"
@@ -197,12 +190,14 @@
             <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-name">Desert Quail Inn</h3>
             </a>
-            <p class="hotels-card-type">Гостиница</p>
-            <p class="hotels-card-price">От 2500 ₽</p>
-            <a class="button hotels-button-more" href="#">подробнее</a>
-            <button class="button button-light hotels-button-favorite" type="button">в избранное</button>
-            <div class="hotels-raiting-stars three-stars"><span class="visually-hidden">4 звезды</span></div>
-            <p class="hotels-raiting">Рейтинг: 6,9</p>
+            <div class="hotel-information">
+              <p class="hotels-card-type">Гостиница</p>
+              <p class="hotels-card-price">От 2500 ₽</p>
+              <a class="button hotels-button-more" href="#">подробнее</a>
+              <button class="button button-light hotels-button-favorite" type="button">в избранное</button>
+              <div class="hotels-raiting-stars three-stars"><span class="visually-hidden">4 звезды</span></div>
+              <p class="hotels-raiting">Рейтинг: 6,9</p>
+            </div>
           </li>
           <li class="hotels-card">
             <a class="hotels-card-image" href="#"><img src="images/hotels/greentree.jpeg" width="300" height="212"
@@ -210,12 +205,15 @@
             <a class="hotels-card-link" href="#">
               <h3 class="hotels-card-name">GreenTree Inn</h3>
             </a>
-            <p class="hotels-card-type">Гостиница</p>
-            <p class="hotels-card-price">От 1500 ₽</p>
-            <a class="button hotels-button-more" href="#">подробнее</a>
-            <button class="button button-light hotels-button-favorite" type="button">в избранное</button>
-            <div class="hotels-raiting-stars two-stars"><span class="visually-hidden">4 звезды</span></div>
-            <p class="hotels-raiting">Рейтинг: 8,5</p>
+            <div class="hotel-information">
+              <p class="hotels-card-type">Гостиница</p>
+              <p class="hotels-card-price">От 1500 ₽</p>
+              <a class="button hotels-button-more" href="#">подробнее</a>
+              <button class="button button-light hotels-button-favorite" type="button">в избранное</button>
+              <div class="hotels-raiting-stars two-stars"><span class="visually-hidden">4 звезды</span></div>
+              <p class="hotels-raiting">Рейтинг: 5.0</p>
+
+            </div>
           </li>
 
         </ul>
@@ -326,13 +324,14 @@
               90.7 20.2564C92.2 20.2564 93.1 21.2564 93.1 22.8564V29.1564H95.1V23.5564C95.1 21.1564 96.5 20.2564 97.7
               20.2564C99.2 20.2564 100.1 21.2564 100.1 22.8564V29.1564H102.1V22.6564C102.2 20.0564 100.7 18.2564 98.2
               18.2564Z" />
-            <path d=" M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7
+            <path
+              d=" M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7
               31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" />
-            </svg>
+          </svg>
 
         </a>
-          </section>
-      </footer>
+      </section>
+    </footer>
 
   </body>
 
